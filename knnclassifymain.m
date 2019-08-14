@@ -1,10 +1,9 @@
-x=load('trainfruits.txt');
-y=load('testfruits.txt');
+x=load('train.txt');
+y=load('test.txt');
 x1=x(:,1:end-1);
 x2=x(:,end);
 y1=y(:,1:end);
 knn=2;
-%[predicted]=knneval(x1,x2,y1,knn);
 k=1;
 for i=1:size(y1,1)
     for j=1:size(x1,1)
